@@ -3,7 +3,7 @@ name: Java CI with Maven
 on:
   push:
     paths:
-      - '**.js'
+      - 'NewCodePhillips/src/**'
     
 jobs:
   build:
