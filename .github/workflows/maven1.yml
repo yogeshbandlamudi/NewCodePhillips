@@ -8,7 +8,7 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
-# Specified the various java versions that can be run based on the requirement using matrix and array.
+# Specified the various java versions that can be run using matrix and array.
     strategy:
       matrix:
         java-version: [ 8, 11 ]
