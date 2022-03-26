@@ -2,9 +2,7 @@ name: Java CI with Maven
 # Specified the paths so that the build will only occur when there is a change in the source code i.e. .js file
 on:
   push:
-    paths:
-      - 'NewCodePhillips/src/**'
-    
+   
 jobs:
   build:
     runs-on: ubuntu-latest
