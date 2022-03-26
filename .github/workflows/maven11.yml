@@ -13,14 +13,24 @@ jobs:
   build:
 
     runs-on: ubuntu-latest
-
+    
+    
+strategy:
+  matrix:
+    jdk10:
+      jdkVersion: "1.10"
+    jdk11:
+      jdkVersion: "1.11"
+  maxParallel: 2
+  
     steps:
     - uses: actions/checkout@v2
-    - name: Set up JDK 11
+    - name: Set up JDK
       uses: actions/setup-java@v2
       with:
-        java-version: '11'
+        java-version: '$(jdkVersion)'
         distribution: 'temurin'
         cache: maven
+        
     - name: Build with Maven
       run: mvn -B package --file pom.xml
