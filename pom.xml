@@ -18,13 +18,6 @@
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
   </properties>
-  <distributionManagement>
-        <repository>
-            <id>pkg.github.com</id>
-            <name>GitHub Apache Maven Packages</name>
-            <url>https://maven.pkg.github.com/yogeshbandlamudi/mvn-repo</url>
-        </repository>
-    </distributionManagement>  
   <build>
     <pluginManagement>
       <plugins>
